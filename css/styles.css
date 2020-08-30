@@ -1,0 +1,196 @@
+:root {
+  --white: #fff;
+  --light: #ccc;
+  --primaryColor: #235e3d;
+  --secondayColor: darkred;
+  --tertiaryColor: #138aeb;
+  --primaryText: #333;
+  --secondaryText: gray;
+  --footer: rgba(51, 51, 51, .7);
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+  --screenSmall: 320px;
+  --screenMedium: 768px;
+  --screenLarge: 992px;
+  --screenExtralarge: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background: url("../img/leafs.jpg") no-repeat fixed;
+  background-size: cover;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+}
+
+#container {
+  width: 65vw;
+  padding: 1.5rem;
+  background: var(--white);
+  margin: 1.875rem auto 0;
+  border-radius: 0.25em;
+  box-shadow: 1px 1px 3px var(--secondaryText);
+}
+
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+#header .logo {
+  width: 18rem;
+  height: 4rem;
+  float: left;
+  line-height: 4rem;
+  margin-bottom: 1.25rem;
+  color: var(--white);
+  background: var(--primaryColor);
+  font-family: "Verdana", "Arial", sans-serif;
+  font-size: 1.875rem;
+  letter-spacing: 0.25rem;
+  border-radius: 0.25em;
+  text-align: center;
+  text-transform: uppercase;
+}
+#header #menu {
+  width: 100%;
+  margin-bottom: 1.25rem;
+  background: var(--primaryText);
+  border-radius: 0.25em;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+#header #menu ul {
+  line-height: 2.875rem;
+}
+#header #menu ul li {
+  display: inline-block;
+  transition: all 0.3s;
+}
+#header #menu ul li:hover {
+  background: var(--primaryColor);
+}
+#header #menu ul li a {
+  display: block;
+  color: var(--white);
+  padding: 0 1.875rem;
+}
+
+#content #posts {
+  width: 60%;
+  float: left;
+}
+#content #posts .post {
+  padding: 0.4rem;
+}
+#content #posts .post h2 {
+  font-size: 1.875rem;
+  color: var(--primaryText);
+}
+#content #posts .post .date {
+  display: block;
+  color: var(--secondaryText);
+}
+#content #posts .post p {
+  margin: 1rem 0 0;
+  line-height: 1.35em;
+  text-align: justify;
+  color: var(--primaryText);
+}
+#content #posts .post .read-more {
+  display: inline-block;
+  padding: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--white);
+  background: var(--primaryColor);
+  margin: 0.625rem 0 1.25rem;
+  border-radius: 0.25em;
+}
+#content .sidebar {
+  width: 35%;
+  float: right;
+}
+#content .sidebar #login {
+  margin: 2rem 0 1.25rem;
+  color: var(--primaryText);
+}
+#content .sidebar #login #modal {
+  display: none;
+}
+#content .sidebar #login a {
+  display: inline-block;
+  color: var(--primaryText);
+}
+#content .sidebar #login form {
+  margin: 0.75em 0;
+}
+#content .sidebar #login form input[type=text],
+#content .sidebar #login form input[type=email],
+#content .sidebar #login form input[type=password] {
+  width: 85%;
+  padding: 0.4rem;
+  margin: 0.25rem 0 0.625rem;
+  border: 1px solid var(--light);
+  border-radius: 0.25em;
+  box-shadow: 0 0 3px 1px var(--light) inset;
+}
+#content .sidebar #login form input[type=submit] {
+  background: var(--primaryColor);
+  padding: 0.625em;
+  cursor: pointer;
+  color: var(--white);
+  border: 1px solid var(--primaryColor);
+  border-radius: 0.25em;
+}
+#content .sidebar .about h3 {
+  margin: 2rem 0 1.25rem;
+  text-align: center;
+  line-height: 0.6rem;
+  color: var(--primaryText);
+  background: url("../img/lines.png") repeat-x;
+}
+#content .sidebar .about h3 span {
+  background: var(--white);
+  padding: 0.25rem;
+}
+#content .sidebar .about img {
+  width: 100%;
+  border-radius: 0.25rem;
+}
+#content .sidebar .about p {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.footer {
+  width: 63vw;
+  height: 3rem;
+  margin: 2.5rem auto 0;
+  line-height: 3rem;
+  text-align: center;
+  border-radius: 0.25em;
+  color: var(--white);
+  background: var(--footer);
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,40 @@
+@function img($file) {
+    @return url('../img/'+ $file);
+}
+
+@mixin flexAlign($direction, $jcontent, $alcontent) {
+    display        : flex;
+    flex-flow      : $direction wrap;
+    justify-content: $jcontent;
+    align-items    : $alcontent;
+}
+
+@mixin gridLayout($col-min, $col-max, $row-min, $row-max) {
+    display              : grid;
+    grid-template-columns: repeat(autofit, minmax($col-min, $col-max));
+    grid-template-rows   : repeat(autofit, minmax($row-min, $row-max));
+}
+
+@mixin mobile() {
+    @media (min-width: $screenSmall) {
+        @content;
+    }
+}
+
+@mixin tablet() {
+    @media (min-width: $screenMedium) {
+        @content;
+    }
+}
+
+@mixin laptop() {
+    @media (min-width: $screenLarge) {
+        @content;
+    }
+}
+
+@mixin desktop() {
+    @media (min-width: $screenExtralarge) {
+        @content;
+    }
+}

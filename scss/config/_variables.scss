@@ -1,0 +1,43 @@
+// Variables - CSS
+:root {
+    --white           : #fff;
+    --light           : #ccc;
+    --primaryColor    : #235e3d;
+    --secondayColor   : darkred;
+    --tertiaryColor   : #138aeb;
+    --primaryText     : #333;
+    --secondaryText   : gray;
+    --footer          : rgba(51, 51, 51, .7);
+    --z-back          : -10;
+    --z-normal        : 1;
+    --z-tooltip       : 10;
+    --z-fixed         : 100;
+    --z-modal         : 1000;
+    --screenSmall     : 320px;
+    --screenMedium    : 768px;
+    --screenLarge     : 992px;
+    --screenExtralarge: 1200px;
+}
+
+// Colors
+$white        : var(--white);
+$light        : var(--light);
+$primaryColor : var(--primaryColor);
+$secondayColor: var(--secondayColor);
+$tertiaryColor: var(--tertiaryColor);
+$primaryText  : var(--primaryText);
+$secondaryText: var(--secondaryText);
+$footer       : var(--footer);
+
+// Z index
+$z-back    : var(--z-back);
+$z-normal  : var(--z-normal);
+$z-tooltip : var(--z-tooltip);
+$z-fixed   : var(--z-fixed);
+$z-modal   : var(--z-modal);
+
+// Breakpoints
+$screenSmall  : var(--screenSmall);
+$screenMedium : var(--screenMedium);
+$screenLarge  : var(--screenLarge);
+$screenExtralarge: var(--screenExtralarge);

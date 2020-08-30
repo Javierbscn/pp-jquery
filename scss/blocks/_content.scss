@@ -1,0 +1,105 @@
+#content {
+    #posts {
+        width: 60%;
+        float: left;
+
+        .post {
+            padding: .4rem;
+
+            h2 {
+                font-size: 1.875rem;
+                color    : $primaryText;
+            }
+
+            .date {
+                display: block;
+                color  : $secondaryText;
+            }
+
+            p {
+                margin     : 1rem 0 0;
+                line-height: 1.35em;
+                text-align : justify;
+                color      : $primaryText;
+            }
+
+            .read-more {
+                display      : inline-block;
+                padding      : .75rem;
+                font-size    : .9rem;
+                color        : $white;
+                background   : $primaryColor;
+                margin       : .625rem 0 1.25rem;
+                border-radius: .25em;
+            }
+        }
+    }
+
+    .sidebar {
+        width: 35%;
+        float: right;
+
+        #login {
+            margin: 2rem 0 1.25rem;
+            color : $primaryText;
+
+            #modal {
+                display: none;
+            }
+
+            a {
+                display: inline-block;
+                color  : $primaryText;
+            }
+
+            form {
+                margin: .75em 0;
+
+                input[type="text"],
+                input[type="email"],
+                input[type="password"] {
+                    width        : 85%;
+                    padding      : .4rem;
+                    margin       : .25rem 0 .625rem;
+                    border       : 1px solid $light;
+                    border-radius: .25em;
+                    box-shadow   : 0 0 3px 1px $light inset;
+                }
+
+                input[type="submit"] {
+                    background   : $primaryColor;
+                    padding      : .625em;
+                    cursor       : pointer;
+                    color        : $white;
+                    border       : 1px solid $primaryColor;
+                    border-radius: .25em;
+                }
+            }
+        }
+
+        .about {
+            h3 {
+                margin     : 2rem 0 1.25rem;
+                text-align : center;
+                line-height: .6rem;
+                color      : $primaryText;
+                background : img('lines.png') repeat-x;
+
+                span {
+                    background: $white;
+                    padding   : .25rem;
+                }
+            }
+
+            img {
+                width        : 100%;
+                border-radius: .25rem;
+            }
+
+            p {
+                font-size : 1rem;
+                text-align: justify;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+// Base - Config
+@import 'config/variables';
+@import 'config/mixins';
+@import 'config/normalize';
+@import 'config/fonts';
+
+// Blocks
+@import 'blocks/container';
+@import 'blocks/header';
+@import 'blocks/content';
+@import 'blocks/footer';

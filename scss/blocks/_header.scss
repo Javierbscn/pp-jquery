@@ -1,0 +1,45 @@
+#header {
+    .logo {
+        width         : 18rem;
+        height        : 4rem;
+        float         : left;
+        line-height   : 4rem;
+        margin-bottom : 1.25rem;
+        color         : $white;
+        background    : $primaryColor;
+        font-family   : 'Verdana', 'Arial', sans-serif;
+        font-size     : 1.875rem;
+        letter-spacing: .25rem;
+        border-radius : .25em;
+        text-align    : center;
+        text-transform: uppercase;
+    }
+
+    #menu {
+        width         : 100%;
+        margin-bottom : 1.25rem;
+        background    : $primaryText;
+        border-radius : .25em;
+        text-transform: uppercase;
+        font-size     : .875rem;
+
+        ul {
+            line-height: 2.875rem;
+
+            li {
+                display   : inline-block;
+                transition: all .3s;
+
+                &:hover {
+                    background: $primaryColor;
+                }
+
+                a {
+                    display: block;
+                    color  : $white;
+                    padding: 0 1.875rem;
+                }
+            }
+        }
+    }
+}

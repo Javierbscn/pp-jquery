@@ -1,0 +1,20 @@
+body {
+    background     : img('leafs.jpg') no-repeat fixed;
+    background-size: cover;
+    font-family    : 'Helvetica', 'Arial', sans-serif;
+    font-size      : 16px;
+}
+
+#container {
+    width        : 65vw;
+    padding      : 1.5rem;
+    background   : $white;
+    margin       : 1.875rem auto 0;
+    border-radius: .25em;
+    box-shadow   : 1px 1px 3px $secondaryText;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
