@@ -1,0 +1,21 @@
+body {
+    background: url('/img/leafs.jpg') no-repeat fixed;
+    background-size: cover;
+}
+
+#header .logo {
+    background: var(--primaryColor);
+}
+
+#menu ul li:hover {
+    background: var(--primaryColor);
+}
+
+#content #posts .post .read-more {
+    background: var(--primaryColor);
+}
+
+.sidebar #login form input[type="submit"] {
+    background: var(--primaryColor);
+    border    : 1px solid var(--primaryColor);
+}

@@ -3,10 +3,11 @@
     --white           : #fff;
     --light           : #ccc;
     --primaryColor    : #235e3d;
-    --secondayColor   : darkred;
-    --tertiaryColor   : #138aeb;
+    --secondaryColor  : #ca3413;
+    --tertiaryColor   : #1f87c4;
     --primaryText     : #333;
     --secondaryText   : gray;
+    --themes          : rgba(51, 51, 51, .5);
     --footer          : rgba(51, 51, 51, .7);
     --z-back          : -10;
     --z-normal        : 1;
@@ -20,14 +21,15 @@
 }
 
 // Colors
-$white        : var(--white);
-$light        : var(--light);
-$primaryColor : var(--primaryColor);
-$secondayColor: var(--secondayColor);
-$tertiaryColor: var(--tertiaryColor);
-$primaryText  : var(--primaryText);
-$secondaryText: var(--secondaryText);
-$footer       : var(--footer);
+$white         : var(--white);
+$light         : var(--light);
+$primaryColor  : var(--primaryColor);
+$secondaryColor: var(--secondaryColor);
+$tertiaryColor : var(--tertiaryColor);
+$primaryText   : var(--primaryText);
+$secondaryText : var(--secondaryText);
+$themes        : var(--themes);
+$footer        : var(--footer);
 
 // Z index
 $z-back    : var(--z-back);

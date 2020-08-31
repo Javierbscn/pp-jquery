@@ -2,10 +2,11 @@
   --white: #fff;
   --light: #ccc;
   --primaryColor: #235e3d;
-  --secondayColor: darkred;
-  --tertiaryColor: #138aeb;
+  --secondaryColor: #ca3413;
+  --tertiaryColor: #1f87c4;
   --primaryText: #333;
   --secondaryText: gray;
+  --themes: rgba(51, 51, 51, .5);
   --footer: rgba(51, 51, 51, .7);
   --z-back: -10;
   --z-normal: 1;
@@ -36,9 +37,36 @@ li {
   list-style: none;
 }
 
+#select-theme {
+  width: 3.25em;
+  height: 7.25em;
+  top: 40%;
+  position: fixed;
+  background: var(--themes);
+  color: var(--light);
+  text-align: center;
+  font-size: 0.875rem;
+  border-radius: 0.25em;
+}
+#select-theme #theme-green, #select-theme #theme-red, #select-theme #theme-blue {
+  width: 1.5625em;
+  height: 1.5625em;
+  margin: 0.3em auto;
+  cursor: pointer;
+  border-radius: 0.25em;
+  border: 1px solid var(--light);
+}
+#select-theme #theme-green {
+  background: var(--primaryColor);
+}
+#select-theme #theme-red {
+  background: var(--secondaryColor);
+}
+#select-theme #theme-blue {
+  background: var(--tertiaryColor);
+}
+
 body {
-  background: url("../img/leafs.jpg") no-repeat fixed;
-  background-size: cover;
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: 16px;
 }
@@ -64,7 +92,6 @@ body {
   line-height: 4rem;
   margin-bottom: 1.25rem;
   color: var(--white);
-  background: var(--primaryColor);
   font-family: "Verdana", "Arial", sans-serif;
   font-size: 1.875rem;
   letter-spacing: 0.25rem;
@@ -87,13 +114,16 @@ body {
   display: inline-block;
   transition: all 0.3s;
 }
-#header #menu ul li:hover {
-  background: var(--primaryColor);
-}
 #header #menu ul li a {
   display: block;
   color: var(--white);
   padding: 0 1.875rem;
+}
+
+#container .bx-wrapper,
+#container .bx-viewport {
+  height: 250px !important;
+  box-sizing: content-box;
 }
 
 #content #posts {
@@ -122,7 +152,6 @@ body {
   padding: 0.75rem;
   font-size: 0.9rem;
   color: var(--white);
-  background: var(--primaryColor);
   margin: 0.625rem 0 1.25rem;
   border-radius: 0.25em;
 }
@@ -155,11 +184,9 @@ body {
   box-shadow: 0 0 3px 1px var(--light) inset;
 }
 #content .sidebar #login form input[type=submit] {
-  background: var(--primaryColor);
   padding: 0.625em;
   cursor: pointer;
   color: var(--white);
-  border: 1px solid var(--primaryColor);
   border-radius: 0.25em;
 }
 #content .sidebar .about h3 {
@@ -191,6 +218,11 @@ body {
   border-radius: 0.25em;
   color: var(--white);
   background: var(--footer);
+}
+.footer .to-up {
+  color: var(--white);
+  margin: 0 1em;
+  float: right;
 }
 
 /*# sourceMappingURL=styles.css.map */

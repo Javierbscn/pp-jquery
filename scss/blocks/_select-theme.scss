@@ -1,0 +1,31 @@
+#select-theme{
+    width: 3.25em;
+    height: 7.25em;
+    top: 40%;
+    position: fixed;
+    background: $themes;
+    color: $light;
+    text-align: center;
+    font-size: .875rem;
+    border-radius: .25em;
+
+    #theme-green, #theme-red, #theme-blue{
+        width: 1.5625em;
+        height: 1.5625em;
+        margin: .3em auto;
+        cursor: pointer;
+        border-radius: .25em;
+        border: 1px solid $light;
+    }
+
+    #theme-green{
+        background: $primaryColor;
+    } 
+
+    #theme-red{
+        background: $secondaryColor;
+    } 
+    #theme-blue{
+        background: $tertiaryColor;
+    }
+}

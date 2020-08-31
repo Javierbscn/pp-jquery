@@ -2,10 +2,11 @@
 @import 'config/variables';
 @import 'config/mixins';
 @import 'config/normalize';
-@import 'config/fonts';
 
 // Blocks
+@import 'blocks/select-theme';
 @import 'blocks/container';
 @import 'blocks/header';
+@import 'blocks/slider';
 @import 'blocks/content';
 @import 'blocks/footer';

@@ -1,0 +1,21 @@
+body {
+    background: url('/img/sky.jpg') no-repeat fixed;
+    background-size: cover;
+}
+
+#header .logo {
+    background: var(--tertiaryColor);
+}
+
+#menu ul li:hover {
+    background: var(--tertiaryColor);
+}
+
+#content #posts .post .read-more {
+    background: var(--tertiaryColor);
+}
+
+.sidebar #login form input[type="submit"] {
+    background: var(--tertiaryColor);
+    border    : 1px solid var(--tertiaryColor);
+}

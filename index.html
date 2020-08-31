@@ -9,9 +9,25 @@
     <link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css">
     <link rel="stylesheet" href="js/jquery-ui/jquery-ui.structure.min.css">
     <link rel="stylesheet" href="js/jquery-ui/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/themes/theme-green.css" id="theme">
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Moment -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/locale/es.min.js"></script>
+    <!-- slider -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>    
 </head>
 <body>
+    <div id="select-theme">Tema
+        <div id="theme-green"></div>
+        <div id="theme-red"></div>
+        <div id="theme-blue"></div>
+    </div>
     <div id="container">
         <header id="header">
             <h1 class="logo">Logo Web</h1>
@@ -27,47 +43,14 @@
         </header>
 
         <div id="slider">
-
+            <div><img src="img/leafs.jpg" title=""></div>
+            <div><img src="img/leaf-red.jpg" title=""></div>
+            <div><img src="img/sky.jpg" title=""></div>            
         </div>
 
         <section id="content">
             <div id="posts">
-                <article class="post">
-                    <h2>Título del Artículo</h2>
-                    <span class="date">Fecha de publicación</span>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam aliquid sequi asperiores commodi eos aliquam quidem, reprehenderit iste ea laudantium voluptatum placeat temporibus, praesentium unde velit distinctio et, perspiciatis est explicabo beatae soluta porro. Tempora veniam nesciunt, facere incidunt voluptas explicabo culpa doloribus saepe dolor delectus voluptates ipsam necessitatibus. Animi recusandae assumenda esse culpa sit deleniti ratione veritatis laudantium quod odio illo est unde fugit veniam sed porro, amet, ipsa reprehenderit totam, dolor eius. Itaque.</p>
-                    <a href="#" class="read-more">Leer más</a>
-                </article>
-                <article class="post">
-                    <h2>Título del Artículo</h2>
-                    <span class="date">Fecha de publicación</span>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam aliquid sequi asperiores commodi eos aliquam quidem, reprehenderit iste ea laudantium voluptatum placeat temporibus, praesentium unde velit distinctio et, perspiciatis est explicabo beatae soluta porro. Tempora veniam nesciunt, facere incidunt voluptas explicabo culpa doloribus saepe dolor delectus voluptates ipsam necessitatibus. Animi recusandae assumenda esse culpa sit deleniti ratione veritatis laudantium quod odio illo est unde fugit veniam sed porro, amet, ipsa reprehenderit totam, dolor eius. Itaque.</p>
-                    <a href="#" class="read-more">Leer más</a>
-                </article>
-                <article class="post">
-                    <h2>Título del Artículo</h2>
-                    <span class="date">Fecha de publicación</span>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam aliquid sequi asperiores commodi eos aliquam quidem, reprehenderit iste ea laudantium voluptatum placeat temporibus, praesentium unde velit distinctio et, perspiciatis est explicabo beatae soluta porro. Tempora veniam nesciunt, facere incidunt voluptas explicabo culpa doloribus saepe dolor delectus voluptates ipsam necessitatibus. Animi recusandae assumenda esse culpa sit deleniti ratione veritatis laudantium quod odio illo est unde fugit veniam sed porro, amet, ipsa reprehenderit totam, dolor eius. Itaque.</p>
-                    <a href="#" class="read-more">Leer más</a>
-                </article>
-                <article class="post">
-                    <h2>Título del Artículo</h2>
-                    <span class="date">Fecha de publicación</span>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam aliquid sequi asperiores commodi eos aliquam quidem, reprehenderit iste ea laudantium voluptatum placeat temporibus, praesentium unde velit distinctio et, perspiciatis est explicabo beatae soluta porro. Tempora veniam nesciunt, facere incidunt voluptas explicabo culpa doloribus saepe dolor delectus voluptates ipsam necessitatibus. Animi recusandae assumenda esse culpa sit deleniti ratione veritatis laudantium quod odio illo est unde fugit veniam sed porro, amet, ipsa reprehenderit totam, dolor eius. Itaque.</p>
-                    <a href="#" class="read-more">Leer más</a>
-                </article>
-                <article class="post">
-                    <h2>Título del Artículo</h2>
-                    <span class="date">Fecha de publicación</span>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam aliquid sequi asperiores commodi eos aliquam quidem, reprehenderit iste ea laudantium voluptatum placeat temporibus, praesentium unde velit distinctio et, perspiciatis est explicabo beatae soluta porro. Tempora veniam nesciunt, facere incidunt voluptas explicabo culpa doloribus saepe dolor delectus voluptates ipsam necessitatibus. Animi recusandae assumenda esse culpa sit deleniti ratione veritatis laudantium quod odio illo est unde fugit veniam sed porro, amet, ipsa reprehenderit totam, dolor eius. Itaque.</p>
-                    <a href="#" class="read-more">Leer más</a>
-                </article>
-                <article class="post">
-                    <h2>Título del Artículo</h2>
-                    <span class="date">Fecha de publicación</span>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam aliquid sequi asperiores commodi eos aliquam quidem, reprehenderit iste ea laudantium voluptatum placeat temporibus, praesentium unde velit distinctio et, perspiciatis est explicabo beatae soluta porro. Tempora veniam nesciunt, facere incidunt voluptas explicabo culpa doloribus saepe dolor delectus voluptates ipsam necessitatibus. Animi recusandae assumenda esse culpa sit deleniti ratione veritatis laudantium quod odio illo est unde fugit veniam sed porro, amet, ipsa reprehenderit totam, dolor eius. Itaque.</p>
-                    <a href="#" class="read-more">Leer más</a>
-                </article>
+                <!-- posts dinámicos -->
             </div>
                 
             <aside class="sidebar">
@@ -104,10 +87,7 @@
     </div>
     <footer class="footer">
         Derechos Reservados &copy; Javier Boscán 2020
-    </footer>
-
-    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+        <a href="#" class="to-up">Ir arriba</a>
+    </footer>    
 </body>
 </html>

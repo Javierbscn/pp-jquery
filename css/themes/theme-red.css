@@ -1,0 +1,21 @@
+body {
+    background: url('/img/leaf-red.jpg') no-repeat fixed;
+    background-size: cover;
+}
+
+#header .logo {
+    background: var(--secondaryColor);
+}
+
+#menu ul li:hover {
+    background: var(--secondaryColor);
+}
+
+#content #posts .post .read-more {
+    background: var(--secondaryColor);
+}
+
+.sidebar #login form input[type="submit"] {
+    background: var(--secondaryColor);
+    border    : 1px solid var(--secondaryColor);
+}
