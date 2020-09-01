@@ -9,6 +9,7 @@
     --secondaryText   : gray;
     --themes          : rgba(51, 51, 51, .5);
     --footer          : rgba(51, 51, 51, .7);
+    --error           : #b30404a9;
     --z-back          : -10;
     --z-normal        : 1;
     --z-tooltip       : 10;
@@ -30,6 +31,7 @@ $primaryText   : var(--primaryText);
 $secondaryText : var(--secondaryText);
 $themes        : var(--themes);
 $footer        : var(--footer);
+$error         : var(--error);
 
 // Z index
 $z-back    : var(--z-back);

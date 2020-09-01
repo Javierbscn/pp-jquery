@@ -1,0 +1,41 @@
+#content {
+    #contact {
+        color    : $primaryText;
+        font-size: 1.15rem;
+        float    : left;
+        width    : 60%;
+
+        #contact-form {
+            margin: .9rem 0 0;
+
+            #contact-name-error, #contact-lastname-error, #contact-email-error, #date-error, #age-error, #message-error {
+                color    : $error;
+                border: none;
+                box-shadow: none;
+                font-size: .875rem;
+            }
+
+            .error{
+                border: 1px solid $error;
+                box-shadow   : 0 0 3px 1px $error inset;
+            }
+
+            label {
+                display: block;
+
+            }
+
+            textarea {
+                resize: none;
+                height: 10rem;
+            }
+
+            input[type="submit"] {
+                display: inline-block;
+                width  : 85%;
+                margin : .75rem 0;
+            }
+        }
+    }
+
+}

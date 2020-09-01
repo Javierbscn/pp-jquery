@@ -1,0 +1,33 @@
+#content {
+    form {
+        margin: .75em 0;
+        line-height: 2rem;
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        select,
+        textarea {
+            width        : 85%;
+            padding      : .4rem;
+            margin       : .25rem 0 .15rem;
+            border       : 1px solid $light;
+            border-radius: .25em;
+            box-shadow   : 0 0 3px 1px $light inset;
+        }
+
+        input[type="submit"] {
+            padding      : .625em;
+            cursor       : pointer;
+            color        : $white;
+            font-weight  : bold;
+            border-radius: .25em;
+            transition   : all .3s;
+
+            &:hover {
+                transform: scale(.95, .95);
+            }
+        }
+    }
+}

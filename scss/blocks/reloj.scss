@@ -1,0 +1,13 @@
+#content {
+    #reloj {
+        display      : inline-block;
+        margin       : 1.5rem auto;
+        font-size    : 3rem;
+        font-weight  : bold;
+        font-family  : 'Helvetica', 'Arial', sans-serif;
+        color        : $primaryText;
+        border       : .25rem dashed $primaryText;
+        border-radius: .25em;
+        padding      : 1rem;
+    }
+}

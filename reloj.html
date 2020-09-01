@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Proyecto personal elaborado con JQuery y algunas librerías de JavaScript">
-    <title>Blog</title>
+    <title>Sobre mí</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/themes/theme-green.css" id="theme">
     <!-- JQuery -->
@@ -14,12 +12,9 @@
     <!-- Moment -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/locale/es.min.js"></script>
-    <!-- slider -->
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script type="text/javascript" src="js/slider.js"></script>
-    <script type="text/javascript" src="js/posts.js"></script>
     <script type="text/javascript" src="js/login.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>    
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/reloj.js"></script>
 </head>
 <body>
     <div id="select-theme">Tema
@@ -41,14 +36,8 @@
             </nav>
         </header>
 
-        <div id="slider">
-            <div><img src="img/slider1.jpg" title=""></div>
-            <div><img src="img/slider2.jpg" title=""></div>
-            <div><img src="img/slider3.jpg" title=""></div>            
-        </div>
-
         <section id="content">
-            <div id="posts"><!-- posts dinámicos --></div>
+            <div id="reloj"></div>
                 
             <aside class="sidebar">
                 <div id="login">

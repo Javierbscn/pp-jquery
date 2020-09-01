@@ -1,5 +1,5 @@
 body {
-    background: url('/img/leaf-red.jpg') no-repeat fixed;
+    background     : url('/img/leaf-red.jpg') no-repeat fixed;
     background-size: cover;
 }
 
@@ -15,7 +15,17 @@ body {
     background: var(--secondaryColor);
 }
 
-.sidebar #login form input[type="submit"] {
+form input[type="submit"] {
     background: var(--secondaryColor);
     border    : 1px solid var(--secondaryColor);
+}
+
+.sidebar .about #logout {
+    margin-left: 1rem;
+    color : var(--secondaryColor);
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    border: 1px solid var(--secondaryColor);
+    background: var(--secondaryColor);
 }

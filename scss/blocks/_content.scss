@@ -50,31 +50,16 @@
                 display: inline-block;
                 color  : $primaryText;
             }
-
-            form {
-                margin: .75em 0;
-
-                input[type="text"],
-                input[type="email"],
-                input[type="password"] {
-                    width        : 85%;
-                    padding      : .4rem;
-                    margin       : .25rem 0 .625rem;
-                    border       : 1px solid $light;
-                    border-radius: .25em;
-                    box-shadow   : 0 0 3px 1px $light inset;
-                }
-
-                input[type="submit"] {
-                    padding      : .625em;
-                    cursor       : pointer;
-                    color        : $white;
-                    border-radius: .25em;
-                }
-            }
         }
 
         .about {
+            .user-name {
+                display   : block;
+                text-align: center;
+                color     : $primaryText;
+                font-size : .95rem;
+            }
+
             h3 {
                 margin     : 2rem 0 1.25rem;
                 text-align : center;

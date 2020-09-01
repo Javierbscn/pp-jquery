@@ -3,22 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Proyecto personal elaborado con JQuery y algunas librerías de JavaScript">
-    <title>Blog</title>
+    <title>Sobre mí</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.theme.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/themes/theme-green.css" id="theme">
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
-    <!-- Moment -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/locale/es.min.js"></script>
-    <!-- slider -->
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script type="text/javascript" src="js/slider.js"></script>
-    <script type="text/javascript" src="js/posts.js"></script>
+    <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/accordion.js"></script>
     <script type="text/javascript" src="js/main.js"></script>    
 </head>
 <body>
@@ -41,14 +37,30 @@
             </nav>
         </header>
 
-        <div id="slider">
-            <div><img src="img/slider1.jpg" title=""></div>
-            <div><img src="img/slider2.jpg" title=""></div>
-            <div><img src="img/slider3.jpg" title=""></div>            
-        </div>
-
         <section id="content">
-            <div id="posts"><!-- posts dinámicos --></div>
+            <div id="container-accord">
+                <h2>Sobre mí</h2>
+                <div id="accordion">
+                    <h3>¿Quién soy?</h3>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsam minima mollitia deserunt dolores impedit numquam amet provident omnis dolorem perferendis, doloribus, dolore dicta voluptatum quisquam facilis! Ratione quam distinctio magni quasi et accusamus aperiam quae ipsa vitae, deleniti ad rerum, harum error esse illo nam. Totam deserunt consectetur cumque!
+                        </p>
+                    </div>
+                    <h3>Mi historia</h3>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsam minima mollitia deserunt dolores impedit numquam amet provident omnis dolorem perferendis, doloribus, dolore dicta voluptatum quisquam facilis! Ratione quam distinctio magni quasi et accusamus aperiam quae ipsa vitae, deleniti ad rerum, harum error esse illo nam. Totam deserunt consectetur cumque!
+                        </p>
+                    </div>
+                    <h3>Mi misión</h3>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsam minima mollitia deserunt dolores impedit numquam amet provident omnis dolorem perferendis, doloribus, dolore dicta voluptatum quisquam facilis! Ratione quam distinctio magni quasi et accusamus aperiam quae ipsa vitae, deleniti ad rerum, harum error esse illo nam. Totam deserunt consectetur cumque!
+                        </p>
+                    </div>
+                </div> 
+            </div>            
                 
             <aside class="sidebar">
                 <div id="login">
