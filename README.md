@@ -7,3 +7,5 @@ Simulación de web tipo blog personal. Es una web con artículos dinámicos agre
 - Página de about, con acordeón de información.
 
 Fue realizada con Sass, JQuery, JQuery UI, MomentJS, jQuery Validation Plugin y bxSlider
+
+Web: https://javierbscn.github.io/pp-jquery/
