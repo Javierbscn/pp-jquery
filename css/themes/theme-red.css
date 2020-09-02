@@ -1,5 +1,5 @@
 body {
-    background     : url('/img/leaf-red.jpg') no-repeat fixed;
+    background     : url('../../img/leaf-red.jpg') no-repeat fixed;
     background-size: cover;
 }
 
