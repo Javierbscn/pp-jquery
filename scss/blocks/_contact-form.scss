@@ -39,6 +39,12 @@
                 display: inline-block;
                 width  : 85%;
             }
+
+            .form-info{
+                font-size: .875rem;
+                color: $secondaryText;
+                margin: -.75rem 0;
+            }
         }
     }
 }

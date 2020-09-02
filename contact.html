@@ -43,31 +43,20 @@
             <div id="contact">
                 <h2>Contáctame</h2>
                 <form class="cmxform" action="" id="contact-form">
-                    <label for="name">Nombre</label>
+                    <label for="name">Tu nombre*</label>
                     <input type="text" name="name" id="contact-name" required>
 
-                    <label for="lastname">Apellido</label>
+                    <label for="email">Tu correo electrónico*</label>
+                    <input type="email" name="email" id="contact-email" required>
+                    
+                    <label for="lastname">Asunto*</label>
                     <input type="text" name="lastname" id="contact-lastname" required>
 
-                    <label for="email">Correo</label>
-                    <input type="email" name="email" id="contact-email" required>
-
-                    <label for="">Género</label>
-                    <select name="gender">
-                        <option value="man">Hombre</option>
-                        <option value="woman">Mujer</option>
-                    </select>
-
-                    <label for="date">Fecha de Nacimiento</label>
-                    <input type="text" name="date" id="date" required>
-
-                    <label for="age">Edad</label>
-                    <input type="number" name="age" id="age" required>
-
-                    <label for="message">Mensaje</label>
+                    <label for="message">Mensaje*</label>
                     <textarea id="message" name="message" required></textarea>
                     <br>
                     <input type="submit" value="Enviar">
+                    <p class="form-info">Los campos con marcados con * son obligatorios</p>
                 </form>
 
             </div>

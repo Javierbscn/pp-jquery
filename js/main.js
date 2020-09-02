@@ -40,7 +40,7 @@ $(document).ready(() => {
         event.preventDefault()
 
         $('html, body').animate({
-            scrollTop: 250
+            scrollTop: 200
         }, 750)
 
         return false
