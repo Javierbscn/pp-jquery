@@ -1,18 +1,13 @@
 #select-theme{
-    width: 3.25em;
-    height: 7.25em;
-    top: 40%;
-    position: fixed;
     background: $themes;
     color: $light;
+    height: 7.5em;
     text-align: center;
-    font-size: .875rem;
     border-radius: .25em;
 
     #theme-green, #theme-red, #theme-blue{
-        width: 1.5625em;
         height: 1.5625em;
-        margin: .3em auto;
+        margin: .4em auto;
         cursor: pointer;
         border-radius: .25em;
         border: 1px solid $light;
@@ -27,5 +22,31 @@
     } 
     #theme-blue{
         background: $tertiaryColor;
+    }
+}
+
+@include mobile {
+    #select-theme{
+        width: 3em;
+        top: 0;
+        position: absolute;
+        font-size: .75rem;
+    
+        #theme-green, #theme-red, #theme-blue{
+            width: 2em;
+        }
+    }
+}
+
+@include laptop {
+    #select-theme{
+        width: 3.25em;
+        top: 40%;
+        position: fixed;
+        font-size: .875rem;
+    
+        #theme-green, #theme-red, #theme-blue{
+            width: 1.5625em;
+        }
     }
 }

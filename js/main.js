@@ -45,5 +45,4 @@ $(document).ready(() => {
 
         return false
     })
-
 })

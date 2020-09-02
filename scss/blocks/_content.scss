@@ -1,6 +1,5 @@
 #content {
     #posts {
-        width: 60%;
         float: left;
 
         .post {
@@ -24,7 +23,6 @@
             }
 
             .read-more {
-                display      : inline-block;
                 padding      : .75rem;
                 font-size    : .9rem;
                 color        : $white;
@@ -35,16 +33,10 @@
     }
 
     .sidebar {
-        width: 35%;
         float: right;
 
         #login {
-            margin: 2rem 0 1.25rem;
             color : $primaryText;
-
-            #modal {
-                display: none;
-            }
 
             a {
                 display: inline-block;
@@ -79,8 +71,84 @@
             }
 
             p {
-                font-size : 1rem;
                 text-align: justify;
+            }
+        }
+    }
+}
+
+@include mobile {
+    #content {
+        #posts {
+            width: 100%;
+
+            .post {
+                p {
+                    line-height: 1.5em;
+                }
+
+                .read-more {
+                    display   : block;
+                    text-align: center;
+                }
+            }
+        }
+
+        .sidebar {
+            width: 100%;
+
+            #login {
+                margin: 2rem auto 1.25rem;
+                width: 90%;
+
+                a {
+                    display: inline-block;
+                }
+
+
+                label {
+                    display: block;
+                }
+
+            }
+
+            .about {
+                img {
+                    width        : 100%;
+                    border-radius: .25rem;
+                }
+
+                p {
+                    margin: .3em 0;
+                }
+            }
+        }
+    }
+}
+
+@include laptop {
+    #content {
+        #posts {
+            width: 60%;
+    
+            .post {    
+                .read-more {
+                    display      : inline-block;
+                }
+            }
+        }
+    
+        .sidebar {
+            width: 35%;
+    
+            #login {
+                margin: 2rem 0 1.25rem;
+            }
+    
+            .about {    
+                p {
+                    font-size : 1rem;
+                }
             }
         }
     }

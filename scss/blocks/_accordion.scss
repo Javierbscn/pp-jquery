@@ -1,11 +1,30 @@
 #content{
     #container-accord{
-        width: 60%;
         float: left;
         margin: 2.25rem 0;
 
         #accordion{
             margin: .75em 0 0;
+
+            .ui-widget-content, .ui-accordion-content-active{
+                height: auto !important;
+            }
+        }
+    }
+}
+
+@include mobile {
+    #content{
+        #container-accord{
+            width: 100%;
+        }
+    }
+}
+
+@include laptop{
+    #content{
+        #container-accord{
+            width: 60%;
         }
     }
 }

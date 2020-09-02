@@ -1,0 +1,44 @@
+#content {
+    .box {
+        text-align: center;
+        margin    : 1.5rem auto;
+
+        h3 {
+            font-size    : 1.5rem;
+            margin-bottom: .5rem;
+            color        : $primaryText;
+        }
+
+        #reloj {
+            display      : inline-block;
+            font-weight  : bold;
+            font-family  : 'Helvetica', 'Arial', sans-serif;
+            color        : $primaryText;
+            border       : .25rem dashed $primaryText;
+            border-radius: .25em;
+            padding      : 1rem;
+        }
+    }
+
+}
+
+@include mobile {
+    #content {
+        .box {
+            #reloj {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@include laptop {
+    .box {
+        width: 60%;
+        float: left;
+
+        #reloj {
+            font-size: 3rem;
+        }
+    }
+}

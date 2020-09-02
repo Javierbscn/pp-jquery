@@ -1,13 +1,9 @@
 body {
-    font-family    : 'Helvetica', 'Arial', sans-serif;
-    font-size      : 16px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 #container {
-    width        : 65vw;
-    padding      : 1.5rem;
     background   : $white;
-    margin       : 1.875rem auto 0;
     border-radius: .25em;
     box-shadow   : 1px 1px 3px $secondaryText;
 }
@@ -15,4 +11,30 @@ body {
 .clearfix {
     float: none;
     clear: both;
+}
+
+@include mobile {
+    body {
+        font-size: 14px;
+    }
+
+    #container {
+        width  : 90vw;
+        padding: 1rem;
+        margin : 1rem auto 0;
+    }
+}
+
+@include laptop{
+    body {
+        font-size: 16px;
+    }
+}
+
+@include desktop {
+    #container {
+        width        : 70vw;
+        padding      : 1.5rem;
+        margin       : 1.875rem auto 0;
+    }
 }

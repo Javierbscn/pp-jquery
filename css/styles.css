@@ -9,15 +9,6 @@
   --themes: rgba(51, 51, 51, .5);
   --footer: rgba(51, 51, 51, .7);
   --error: #b30404a9;
-  --z-back: -10;
-  --z-normal: 1;
-  --z-tooltip: 10;
-  --z-fixed: 100;
-  --z-modal: 1000;
-  --screenSmall: 320px;
-  --screenMedium: 768px;
-  --screenLarge: 992px;
-  --screenExtralarge: 1200px;
 }
 
 * {
@@ -39,20 +30,15 @@ li {
 }
 
 #select-theme {
-  width: 3.25em;
-  height: 7.25em;
-  top: 40%;
-  position: fixed;
   background: var(--themes);
   color: var(--light);
+  height: 7.5em;
   text-align: center;
-  font-size: 0.875rem;
   border-radius: 0.25em;
 }
 #select-theme #theme-green, #select-theme #theme-red, #select-theme #theme-blue {
-  width: 1.5625em;
   height: 1.5625em;
-  margin: 0.3em auto;
+  margin: 0.4em auto;
   cursor: pointer;
   border-radius: 0.25em;
   border: 1px solid var(--light);
@@ -67,16 +53,34 @@ li {
   background: var(--tertiaryColor);
 }
 
+@media (min-width: 320px) {
+  #select-theme {
+    width: 3em;
+    top: 0;
+    position: absolute;
+    font-size: 0.75rem;
+  }
+  #select-theme #theme-green, #select-theme #theme-red, #select-theme #theme-blue {
+    width: 2em;
+  }
+}
+@media (min-width: 992px) {
+  #select-theme {
+    width: 3.25em;
+    top: 40%;
+    position: fixed;
+    font-size: 0.875rem;
+  }
+  #select-theme #theme-green, #select-theme #theme-red, #select-theme #theme-blue {
+    width: 1.5625em;
+  }
+}
 body {
   font-family: "Helvetica", "Arial", sans-serif;
-  font-size: 16px;
 }
 
 #container {
-  width: 65vw;
-  padding: 1.5rem;
   background: var(--white);
-  margin: 1.875rem auto 0;
   border-radius: 0.25em;
   box-shadow: 1px 1px 3px var(--secondaryText);
 }
@@ -86,15 +90,33 @@ body {
   clear: both;
 }
 
+@media (min-width: 320px) {
+  body {
+    font-size: 14px;
+  }
+
+  #container {
+    width: 90vw;
+    padding: 1rem;
+    margin: 1rem auto 0;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  #container {
+    width: 70vw;
+    padding: 1.5rem;
+    margin: 1.875rem auto 0;
+  }
+}
 #header .logo {
-  width: 18rem;
-  height: 4rem;
   float: left;
-  line-height: 4rem;
-  margin-bottom: 1.25rem;
   color: var(--white);
   font-family: "Verdana", "Arial", sans-serif;
-  font-size: 1.875rem;
   letter-spacing: 0.25rem;
   border-radius: 0.25em;
   text-align: center;
@@ -102,14 +124,9 @@ body {
 }
 #header #menu {
   width: 100%;
-  margin-bottom: 1.25rem;
   background: var(--primaryText);
   border-radius: 0.25em;
   text-transform: uppercase;
-  font-size: 0.875rem;
-}
-#header #menu ul {
-  line-height: 2.875rem;
 }
 #header #menu ul li {
   display: inline-block;
@@ -118,25 +135,75 @@ body {
 #header #menu ul li a {
   display: block;
   color: var(--white);
-  padding: 0 1.875rem;
 }
 
+@media (min-width: 320px) {
+  #header .logo {
+    width: 100%;
+    margin-bottom: 1rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+  }
+  #header #menu {
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+  }
+  #header #menu ul {
+    line-height: 1rem;
+    text-align: center;
+  }
+  #header #menu ul li a {
+    padding: 0.75rem;
+  }
+}
+@media (min-width: 992px) {
+  #header .logo {
+    width: 18rem;
+    height: 4rem;
+    line-height: 4rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.875rem;
+  }
+  #header #menu {
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+  }
+  #header #menu ul {
+    line-height: 2.875rem;
+    text-align: start;
+  }
+  #header #menu ul li a {
+    padding: 0 1.875rem;
+  }
+}
 #container .bx-wrapper,
 #container .bx-viewport {
   box-sizing: content-box;
 }
 
 #content #container-accord {
-  width: 60%;
   float: left;
   margin: 2.25rem 0;
 }
 #content #container-accord #accordion {
   margin: 0.75em 0 0;
 }
+#content #container-accord #accordion .ui-widget-content, #content #container-accord #accordion .ui-accordion-content-active {
+  height: auto !important;
+}
 
+@media (min-width: 320px) {
+  #content #container-accord {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  #content #container-accord {
+    width: 60%;
+  }
+}
 #content #posts {
-  width: 60%;
   float: left;
 }
 #content #posts .post {
@@ -157,7 +224,6 @@ body {
   color: var(--primaryText);
 }
 #content #posts .post .read-more {
-  display: inline-block;
   padding: 0.75rem;
   font-size: 0.9rem;
   color: var(--white);
@@ -165,15 +231,10 @@ body {
   border-radius: 0.25em;
 }
 #content .sidebar {
-  width: 35%;
   float: right;
 }
 #content .sidebar #login {
-  margin: 2rem 0 1.25rem;
   color: var(--primaryText);
-}
-#content .sidebar #login #modal {
-  display: none;
 }
 #content .sidebar #login a {
   display: inline-block;
@@ -201,10 +262,58 @@ body {
   border-radius: 0.25rem;
 }
 #content .sidebar .about p {
-  font-size: 1rem;
   text-align: justify;
 }
 
+@media (min-width: 320px) {
+  #content #posts {
+    width: 100%;
+  }
+  #content #posts .post p {
+    line-height: 1.5em;
+  }
+  #content #posts .post .read-more {
+    display: block;
+    text-align: center;
+  }
+  #content .sidebar {
+    width: 100%;
+  }
+  #content .sidebar #login {
+    margin: 2rem auto 1.25rem;
+    width: 90%;
+  }
+  #content .sidebar #login a {
+    display: inline-block;
+  }
+  #content .sidebar #login label {
+    display: block;
+  }
+  #content .sidebar .about img {
+    width: 100%;
+    border-radius: 0.25rem;
+  }
+  #content .sidebar .about p {
+    margin: 0.3em 0;
+  }
+}
+@media (min-width: 992px) {
+  #content #posts {
+    width: 60%;
+  }
+  #content #posts .post .read-more {
+    display: inline-block;
+  }
+  #content .sidebar {
+    width: 35%;
+  }
+  #content .sidebar #login {
+    margin: 2rem 0 1.25rem;
+  }
+  #content .sidebar .about p {
+    font-size: 1rem;
+  }
+}
 #content form {
   margin: 0.75em 0;
   line-height: 2rem;
@@ -217,7 +326,7 @@ body {
 #content form textarea {
   width: 85%;
   padding: 0.4rem;
-  margin: 0.25rem 0 0.15rem;
+  margin: 0.2rem 0;
   border: 1px solid var(--light);
   border-radius: 0.25em;
   box-shadow: 0 0 3px 1px var(--light) inset;
@@ -228,16 +337,24 @@ body {
   color: var(--white);
   font-weight: bold;
   border-radius: 0.25em;
+  margin: 0.75rem 0;
   transition: all 0.3s;
 }
 #content form input[type=submit]:hover {
   transform: scale(0.95, 0.95);
 }
 
-#content #reloj {
-  display: inline-block;
+#content .box {
+  text-align: center;
   margin: 1.5rem auto;
-  font-size: 3rem;
+}
+#content .box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primaryText);
+}
+#content .box #reloj {
+  display: inline-block;
   font-weight: bold;
   font-family: "Helvetica", "Arial", sans-serif;
   color: var(--primaryText);
@@ -246,16 +363,35 @@ body {
   padding: 1rem;
 }
 
+@media (min-width: 320px) {
+  #content .box #reloj {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .box {
+    width: 60%;
+    float: left;
+  }
+  .box #reloj {
+    font-size: 3rem;
+  }
+}
 #content #contact {
   color: var(--primaryText);
   font-size: 1.15rem;
   float: left;
-  width: 60%;
+  margin: 1.5rem 0;
 }
 #content #contact #contact-form {
   margin: 0.9rem 0 0;
 }
-#content #contact #contact-form #contact-name-error, #content #contact #contact-form #contact-lastname-error, #content #contact #contact-form #contact-email-error, #content #contact #contact-form #date-error, #content #contact #contact-form #age-error, #content #contact #contact-form #message-error {
+#content #contact #contact-form #contact-name-error,
+#content #contact #contact-form #contact-lastname-error,
+#content #contact #contact-form #contact-email-error,
+#content #contact #contact-form #date-error,
+#content #contact #contact-form #age-error,
+#content #contact #contact-form #message-error {
   color: var(--error);
   border: none;
   box-shadow: none;
@@ -267,6 +403,7 @@ body {
 }
 #content #contact #contact-form label {
   display: block;
+  width: 85%;
 }
 #content #contact #contact-form textarea {
   resize: none;
@@ -275,11 +412,24 @@ body {
 #content #contact #contact-form input[type=submit] {
   display: inline-block;
   width: 85%;
-  margin: 0.75rem 0;
 }
 
+@media (min-width: 320px) {
+  #content #contact {
+    width: 100%;
+    text-align: center;
+  }
+  #content #contact label {
+    text-align: start;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 992px) {
+  #content #contact {
+    width: 60%;
+  }
+}
 .footer {
-  width: 63vw;
   height: 3rem;
   margin: 2.5rem auto 0;
   line-height: 3rem;
@@ -290,8 +440,28 @@ body {
 }
 .footer .go-up {
   color: var(--white);
-  margin: 0 1em;
   float: right;
+}
+
+@media (min-width: 320px) {
+  .footer {
+    width: 90vw;
+    padding: 0 0.25rem;
+    text-align: center;
+    font-size: 0.75rem;
+  }
+  .footer .go-up {
+    margin: 0 0.25rem;
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    width: 63vw;
+    font-size: 0.95rem;
+  }
+  .footer .go-up {
+    margin: 0 1em;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

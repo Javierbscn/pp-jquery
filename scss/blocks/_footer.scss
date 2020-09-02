@@ -1,5 +1,4 @@
 .footer{
-    width: 63vw;
     height: 3rem;
     margin: 2.5rem auto 0;
     line-height: 3rem;
@@ -10,7 +9,30 @@
 
     .go-up{
         color: $white;
-        margin: 0 1em;
         float: right;
+    }
+}
+
+@include mobile {
+    .footer{
+        width: 90vw;
+        padding: 0 .25rem;
+        text-align: center;
+        font-size: .75rem;
+
+        .go-up{
+            margin: 0 .25rem;
+        }
+    }
+}
+
+@include tablet{
+    .footer{
+        width: 63vw;
+        font-size: .95rem;
+    
+        .go-up{
+            margin: 0 1em;
+        }
     }
 }

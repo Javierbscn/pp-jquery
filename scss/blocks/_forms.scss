@@ -1,6 +1,6 @@
 #content {
     form {
-        margin: .75em 0;
+        margin     : .75em 0;
         line-height: 2rem;
 
         input[type="text"],
@@ -11,7 +11,7 @@
         textarea {
             width        : 85%;
             padding      : .4rem;
-            margin       : .25rem 0 .15rem;
+            margin       : .2rem 0;
             border       : 1px solid $light;
             border-radius: .25em;
             box-shadow   : 0 0 3px 1px $light inset;
@@ -23,6 +23,7 @@
             color        : $white;
             font-weight  : bold;
             border-radius: .25em;
+            margin       : .75rem 0;
             transition   : all .3s;
 
             &:hover {
